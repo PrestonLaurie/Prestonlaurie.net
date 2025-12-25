@@ -1,85 +1,106 @@
-body {
-    margin:0;
+html {
+  margin: 0;
+  overscroll-behavior: none;
+}
 
+body {
+    margin: 0;
+    padding: 0;
 }
 
 nav {
+    color: black;
     background-color: lightblue;
     text-align: center;
-    color: white;
-    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.7;
 }
 
 #landing_page {
     color: white;
     text-align: center;
-    padding: 30px;
+    position: relative;
+    outline: 2px solid red;
+    height: 100vh;
+    top: 0;
+    overflow: hidden;
+
+    background-color: rgba(87, 70, 9, 0.228);
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#landing_page video {
+    position: absolute;
+    object-position: center, center;
+    z-index: -1;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#title_content {
+    background-color: rgb(0,0,0, 0.35);
+    min-width: 30%;
+    font-size: x-large;
 }
 
 #projects_page {
-    color: white;
+    color: black;
     text-align: center;
     padding: 30px;
+    position: relative;
+    
+    outline: 2px solid red;
+    height: 30vh;
 }
 
 #about_page {
-    color: white;
+    color: black;
     text-align: center;
     padding: 30px;
+    position: relative;
+    
+    outline: 2px solid red;
+    height: 30vh;
 }
 
 #experience_timeline {
-    color: white;
+    color: black;
     text-align: center;
     padding: 30px;
+    position: relative;
+    
+    outline: 2px solid red;
+    height: 30vh;
 }
 
 #contact_page {
-    color: white;
+    color: black;
     text-align: center;
     padding: 30px;
+    position: relative;
+    
+    outline: 2px solid red;
+    height: 30vh;
 }
 
 footer {
+    color: black;
     background-color: lightblue;
     text-align: center;
     padding: 10px;
-
 }
 
-
-
-
-
-
-
-#landing_background {
-    position: fixed;
-    z-index: -1;
-    left:0;
-    top:0;
-}
-@media (min-aspect-ratio: 16/9) {
-    #landing_background {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    #landing_background {
-        width:a uto;
-        height: 100%;
-    }
-}
-
-#landing_content{
-    position: relative;
-    background: rgba(0, 0, 0, 0.3);
-    color: #000000;
-    width: 40%;
-    padding: 10PX;
-    margin: auto;
-}
 
 
